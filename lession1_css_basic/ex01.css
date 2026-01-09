@@ -1,0 +1,101 @@
+/*
+    h2 => seleclector (bộ chọn, vùng chọn)
+    background-color, color, font-sze => property (thuộc tính)
+    purple, #fff, italic => value (giá trị)
+
+    CÁCH ĐẶT TÊN CLASS - ID:
+    - Cú pháp: 
+    +) chấp nhận chữ cái (thường, hoa), số, gạch dưới, gạch ngang
+    +) Không được bắt đầu bằng số
+    +) không chấp nhận ký tự đặc biệt (%, $, @, &...)
+    
+    - Lưu ý:
+    +) Đặt class có ý nghĩa (hạn chế tối đa việc viết tắt)
+    +) nên sử dụng tiếng Anh
+    +) nên sử dụng theo quy tắc BEM (Block Element Modifier) -> hạn chế: theo quy tắc sẽ dài
+
+*/
+
+/* p{
+    color: red;
+} */
+
+h2{
+    /*background-color: tomato;*/
+    color: white;
+    font-size: large;
+}
+
+/* #text {
+    color: blue;
+} */
+
+.title {
+    color: khaki;
+}
+.feature {
+    color: green;
+}
+h3 {
+    color: purple;
+    font-style: italic;
+}
+
+/* Phân cấp cha con
+
+TH1: PHÂN CẤP KHÔNG GIỚI HẠN (DÙNG DẤU CÁCH)
+
+*/
+
+.container .item {
+    color: orchid;
+}
+
+.main .item {
+    color: blue;
+}
+
+.products .products-name {
+    color: cadetblue;
+    font-style: normal;
+}
+
+/* TH2: PHÂN CẤP DẠNG 1 CẤP (CẤP CON) */
+.news > .news-item > .news-details {
+    color: rgb(245, 11, 11);
+    font-style: italic;
+}
+/* ĐỔI MÀU LINK CẤP CHA */
+.primary-menu > ul > li > a {
+    color: rgb(215, 12, 12);
+    text-decoration: none; /* bỏ gạch chân của thẻ a*/;
+}
+
+/* ĐỔI MÀU LINK CẤP CON */
+.primary-menu > ul ul li a {
+    color: rgb(54, 26, 232);
+    text-decoration: none;
+}
+
+/* ĐỔ BACKGROUND CÁC CẤP CON */
+.primary-menu > ul ul {
+    background-color: lightgray;
+}
+
+/* SELECTOR CÙNG CẤP */
+div.block {
+    color: rgb(209, 69, 18);
+}
+
+p.block {
+    color: rgb(19, 135, 96);
+}
+
+.text.element {
+    color: green;
+    font-style: italic;
+}
+
+.title.element {
+    color: orchid;
+}
