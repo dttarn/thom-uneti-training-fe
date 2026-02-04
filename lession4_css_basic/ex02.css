@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+ body{
+    font-family: 'Ubuntu', static;
+} 
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+.post-list .thumbnail{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(249, 110, 110);
+    color: #fff;
+    line-height: 100px;
+    font-size: 4rem;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+}
+.post-list h2{
+    margin-bottom: 10px ;
+}
+.post-list td{
+    padding: 5px 0;
+    border-bottom: 1px dashed palevioletred;
+
+}
+.post-list tr:last-child td{
+    border: none;
+
+}

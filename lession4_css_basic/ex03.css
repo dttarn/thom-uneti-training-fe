@@ -1,0 +1,61 @@
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    line-height: 1.5;
+    font-family: "Inter", sans-serif;
+}
+::placeholder{
+    font-family: "Inter", sans-serif;
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+.register-box{
+    padding: 30px 0;
+}
+.register-box h2, .register-box p{
+    text-align: center;
+    margin-bottom:10px ;
+}
+.register-box h2{
+    font-size: 2rem;
+}
+.register-box .register-header{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom:30px ;
+}
+.register-box form{
+    background: #efefef;
+    padding: 15px ;
+    border-radius: 15px;
+}
+.register-box td{
+    padding: 5px;
+}
+.register-box .field-item{
+    width: 100%;
+    border: none;
+    padding: 10px 20px;
+}
+/* .register-box textarea .field-item{
+    font-family: "Inter", sans-serif;
+} */
+ .register-box button{
+    width: 100%;
+    background: #000;
+    color: #fff;
+    /* border: none; */
+    /* border-color: #fff; */
+    padding: 10px 0;
+    /* cursor: pointer; thay doi con tro chuot */
+ }
+ .register-box button:hover{
+    background: #ffffff;
+    color: #000;
+    border-color: #000;
+ }
