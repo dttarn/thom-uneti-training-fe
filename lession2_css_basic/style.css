@@ -1,0 +1,76 @@
+/* PSEUDO_ELEMENTS */
+
+.title {
+    color: rgb(28, 83, 194);
+}
+
+.title::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background: rgb(28, 83, 194);
+    margin-right: 10px;
+}
+
+/* .title::after {
+    content: '>';
+} */
+
+/* 
+ THÀNH PHẦN GIẢ TRONG CSS:
+ - khi sử dụng before, after => bắt buộc phải có thuộc tính content (nếu không có -> before, after không tồn tại)
+*/
+
+.content::first-letter {
+    font-size: 30px;
+    color: rgb(252, 56, 56);
+    font-weight: bold;
+    font-style: italic;
+}
+
+.content::first-line {
+    color: rgb(42, 44, 173);
+}
+
+.content::selection {
+    color: rgb(78, 1, 78);
+    background-color: violet;
+}
+
+
+/* lớp giả */
+
+.btn {
+    background: rgb(212, 28, 28);
+    color: rgb(255, 255, 255);
+    border: 0;
+}
+
+.btn:hover {
+    background: seagreen;
+    color: whitesmoke;
+}
+
+.btn:active {
+    background: green;
+}
+
+.text:active {
+    color: green;
+}
+
+.btn:focus {
+    background: blueviolet;
+}
+
+.gender label input:checked ~ span {
+    color: rgb(28, 83, 194);
+    text-decoration: line-through;
+}
+
+.list label input:checked ~ span {
+    color: blue;
+    font-style: italic;
+    text-decoration: line-through;
+}

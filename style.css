@@ -1,0 +1,36 @@
+li {
+    list-style: none;
+    margin: 8px 0;
+}
+li > a,
+.menu-item > label,
+.submenu li a {
+    text-decoration: none;   
+    color: #ff6f61;          
+    cursor: pointer;
+    padding: 6px 10px;
+    display: inline-block;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+
+li > a:hover,
+.menu-item > label:hover,
+.submenu li a:hover {
+    background: #fff0ee;
+}
+
+.menu-item {
+    position: relative;
+}
+
+.submenu {
+    display: none;
+    margin-top: 6px;
+    padding-left: 16px;
+}
+
+/* hover thì hiện */
+.menu-item:hover .submenu {
+    display: block;
+}

@@ -1,0 +1,71 @@
+/* 
+THUỘC TÍNH FLOAT
+- Tác dụng: dùng để trôi thành phần html trên trang web sang bên trái hoặc phải của thành phần cha bao quanh nó 
+- Cú pháp: float: value
++) float: tên thuộc tính
++) value: giá trị muốn trôi
+++) none: mặc định không trôi về phía nào
+++) left: trôi về phía bên trái
+++) right: trôi về phía bên phải
+
+**LƯU Ý: 
+- chiều cao của thành phần cha sẽ bị reset về 0 nếu bên trong có sử dụng float
+- để khắc phục tình trạng mất chiều cao của thành phần cha, dùng overflow cho thành phần (trừ overflow: visable)
+- nếu còn không gia trống, các thành phần bên dưới sẽ tự động trôi lên vị trí còn trống (lấp đầy)
+- để khắc phục tình trạng lấp đầy không gian trống => dùng thuộc tính clear
+
+THUỘC TÍNH CLEAR
+- Tác dụng: khắc phục tình trạng tự động trôi khi dùng float
+- Cú pháp: clear: value 
++) clear: tên thuộc tính
++) value: giá trị hướng muốn khắc phục
+++) left: khắc phục trôi về bên trái
+++) right: khắc phục trôi về bên phải
+++) both: khắc phục cả left và right (thường dùng)
+
+
+*/
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+.container{
+    width: 1170px;
+    /* height: 500px;
+    border: 1px solid red; */
+    margin: 0 auto;
+    overflow: auto;
+}
+.block-1{
+    background-color: green;
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+    width: 30%;
+    height: 100px;
+    line-height: 100px;
+    float: right;
+}
+.block-2{
+    background-color: red;
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+    width: 30%;
+    height: 100px;
+    line-height: 100px;
+    float: right;
+}
+/* .text {
+    clear: both;
+} */
+.clear{
+    clear: both;
+
+}
