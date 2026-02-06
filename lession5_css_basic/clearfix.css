@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+}
+/* .box{
+    overflow: auto;
+} */
+.clear{
+    clear: both;
+}
+.box::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.item{
+    width: 33.33%;
+    float: left;
+    padding: 10px;
+    background-color: green;
+    color: #fff;
+}

@@ -1,0 +1,156 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+} /* CSS reset */
+
+/* .container{
+    width: 1170px;
+    margin: 0 auto;
+} */
+ html{
+    font-size: 16px;
+ }
+ body{
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family:"Roboto", sans-serif ;
+    color: #353535;
+ }
+ a{
+    text-decoration: none;
+    color: #333;
+ }
+ a:hover{
+    color: rgb(0,128, 220);
+ }
+ .row::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+ img{
+    max-width: 100%;
+    height: auto;
+ }
+ .news-top{
+    padding:30px 0;
+ }
+ .news-top .top-trending .tag-trending{
+    list-style: none;
+ }
+ .news-top .top-trending .tag-trending::before{
+    content: '';
+    width: 24px;
+    height: 24px;
+    background: url('../images/logo.png') no-repeat;
+    display: inline-block;
+    border-radius: 50px;
+    background-size: 100% 100%;
+    position: relative;
+    top: 5px;
+ }
+ .news-top .top-trending .tag-trending li{
+    display: inline-block;
+    padding: 0 10px;
+ }
+ .news-top .top-trending .tag-trending li a{
+    background: #efefef;
+    padding: 5px 10px;
+    border-radius: 25px;
+    /* font-weight: bold; */
+ }
+ .news-top .top-trending .tag-trending li a::before{
+    content: '#';
+    margin-right:5px ;
+ }
+ .news-top .top-trending .tag-trending li a:hover{
+    background: rgb(60, 120, 215);
+    color: #ffffff;
+ }
+ .news-top .top-trending .weather{
+    padding: 10px 0;
+    text-align: right;
+ }
+ .news-top .top-trending .weather::after{
+    content: '';
+    display: block;
+    float: right;
+    background: url('../images/logo4.png') no-repeat;
+    width: 30px;
+    height: 30px;
+    background-size: 100% 100%;
+    position: relative;
+    top: -5px;
+    margin-left: 5px;
+ }
+ .news-top .top-lists{
+    padding: 10px 0;
+ }
+ .news-top .top-lists .posts-item{
+    padding: 10px 0;
+    border-bottom: 1px solid #afaeae;
+ }
+.news-top .top-lists .posts-item:last-child{
+   border: none;
+}
+ .news-top .top-lists .posts-item h3{
+    font-size: 0.875rem;
+ }
+ .news-top .top-lists .posts-center{
+   padding-top: 10px;
+ }
+ .news-top .top-lists .posts-center h1{
+   font-size: 2rem;
+   line-height: 1.2;
+   margin-top: 10px;
+ }
+ .news-top .top-lists .posts-center ul{
+   list-style-position: inside; /*chuyen vao ben trong*/
+   list-style-type: square;
+   font-weight: bold;
+ }
+ .news-top .top-lists .posts-center p{
+   padding: 10px 0;
+ }
+.news-top .top-lists .video-right{
+    width: 320px;        
+    margin-left: auto;  
+}
+.news-top .top-lists .video-right .video-item{
+    padding: 10px 0;                 
+    border-bottom: 1px solid #afaeae;
+}
+.news-top .top-lists .video-right video{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 6px;
+    /* margin-top: 10px; */
+}
+
+.news-top .top-lists .video-right h3{
+    font-size: 0.8rem;   
+    font-weight: 500;
+    line-height: 1.2;
+    margin-top: 6px;       
+}
+
+.news-top .top-lists .video-right h3 a{
+    text-decoration: none;
+    color: #222;
+}
+
+.news-top .top-lists .video-right h3 a:hover{
+    color: rgb(0,128,220);
+}
+ .news-top .top-lists .video-item{
+    padding: 10px 0;
+    border-bottom: 1px solid #afaeae;
+ }
+.news-top .top-lists .video-item:last-child{
+   border: none;
+}
+

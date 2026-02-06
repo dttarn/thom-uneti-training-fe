@@ -67,5 +67,11 @@ THUỘC TÍNH CLEAR
 } */
 .clear{
     clear: both;
-
+}
+/* .img-align{
+    text-align: center;
+} */
+.img-align img{
+    display: block;
+    margin: 0 auto; /*dùng với thẻ block*/
 }
