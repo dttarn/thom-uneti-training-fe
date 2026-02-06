@@ -1,3 +1,4 @@
+
 li {
     list-style: none;
     margin: 8px 0;
@@ -6,7 +7,7 @@ li > a,
 .menu-item > label,
 .submenu li a {
     text-decoration: none;   
-    color: #ff6f61;          
+    color: #29a069;          
     cursor: pointer;
     padding: 6px 10px;
     display: inline-block;
@@ -17,7 +18,8 @@ li > a,
 li > a:hover,
 .menu-item > label:hover,
 .submenu li a:hover {
-    background: #fff0ee;
+    background: #71d5b2;
+    color: black;
 }
 
 .menu-item {
@@ -29,8 +31,6 @@ li > a:hover,
     margin-top: 6px;
     padding-left: 16px;
 }
-
-/* hover thì hiện */
 .menu-item:hover .submenu {
     display: block;
 }
