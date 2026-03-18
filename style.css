@@ -1,0 +1,17 @@
+li {
+    list-style: none;
+    margin: 8px 0;
+}
+li > a{
+    text-decoration: none;   
+    color: #29a069;          
+    cursor: pointer;
+    padding: 6px 10px;
+    display: inline-block;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+li > a:hover {
+    background: #71d5b2;
+    color: black;
+}
