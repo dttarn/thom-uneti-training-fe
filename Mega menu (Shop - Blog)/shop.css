@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    outline: none;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: #ebebeb;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    display: flex;
+    padding: 15px 30px;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+.logo span {
+    font-weight: bold;
+}
+
+.menu ul {
+    display: flex;
+    gap: 25px;
+}
+.menu ul li {
+    position: relative;
+}
+.menu ul li a {
+    color: #333;
+    font-size: 14px;
+    padding: 10px;
+    display: block;
+}
+.menu ul li a:hover {
+    color: #1462ff;
+}
+
+
+/* header actions */
+.header-actions {
+    display: flex;
+    gap: 20px;
+}
+.header-actions .user{
+    background: #f8f8f8;
+    border-radius:5px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-actions .user i{
+    color: #8b8b8b;
+    font-size: 0.7rem;
+}
+
+/* mega menu */
+.mega-menu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1100px;
+    background: #fff;
+    padding: 30px;
+    display: none;
+    grid-template-columns: repeat(4, 1fr) 1.3fr;
+    gap: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+.mega-menu h4{
+    padding: 5px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+.menu ul li:hover .mega-menu {
+    display: grid;
+}
+.menu .mega-menu .menu-col{
+    min-width: 150px;
+}
+.menu .mega-menu .mega-col h4 {
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+.menu .mega-menu .mega-col h4 a {
+    color: #000;
+    font-weight: bold;
+}
+.menu .mega-menu .mega-col ul {
+    display: block;
+}
+.menu .mega-menu .mega-col ul li {
+    margin-bottom: 8px;
+}
+.menu .mega-menu .mega-col ul li a {
+    color: #666;
+    font-size: 13px;
+}
+.menu .mega-menu .mega-col ul li a:hover {
+    color: #1462ff;
+}
+
+/* featured */
+.menu .mega-menu .featured .product {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #f8f8f8;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 5px;
+}
+.menu .mega-menu .featured .product .product-img {
+    width: 40px;
+    height: 40px;
+    background: #dddcdc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+.menu .mega-menu .featured .product .product-img i{
+    font-size: 0.8rem;
+    color: #8b8b8b;
+}
+.menu .mega-menu .featured .product .product-info p {
+    font-size: 11px;
+    margin-bottom: 3px;
+    font-weight: bold;
+}
+.menu .mega-menu .featured .product .product-info span {
+    color: #1462ff;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+/* banner */
+.menu .mega-menu .mega-banner{
+    background: linear-gradient(#A5678E, #7FACD6, #BFB8DA);
+    border-radius: 12px;
+    color: #fff;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+
+}
+.menu .mega-menu .mega-banner .tag {
+    font-size: 11px;
+    background: rgba(255,255,255,0.2);
+
+    padding: 5px 10px;
+    border-radius: 6px;
+
+    width: fit-content;
+    font-weight: 600;
+}
+.menu .mega-menu .mega-banner h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+.menu .mega-menu .mega-banner p {
+    font-size: 13px;
+}
+.menu .mega-menu .mega-banner .btn{
+    background: #ffffff;
+    color: #718fbe;
+    border-radius: 7px;
+    border: none;
+    font-weight: bold;
+    font-size: 10px;
+    height: 30px;
+    width: 70px;
+}
+
+.container {
+    width: 100%;
+}
+
+.hero {
+    height: 250px;
+
+    background: linear-gradient(135deg, #5f7cff, #7b3fe4);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .btn {
+    background: #fff;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* content */
+.content {
+    background: #fff;
+    text-align: center;
+    padding: 40px 20px;
+}

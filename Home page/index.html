@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./style.css?v=2">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="./all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Home page</title>
 </head>
@@ -20,193 +21,128 @@
         </div>
         <div class="avatar">A</div>
     </div>
+
+    <!-- Container -->
     <div class="container">
+
+        <!-- Side bar -->
         <div class="side-bar">
-            <h3>Categories</h3>
             <ul>
-                <li><a href="#">Women</a><span>45</span></li>
-                <li><a href="#">Men</a><span>32</span></li>
-                <li><a href="#">Women & Men</a><span>28</span></li>
-                <li><a href="#">Accessories</a><span>18</span></li>
-                <li><a href="#">Sale</a><span>12</span></li>
+                <li><a href="#"><i class="fa-solid fa-house"></i>Home</a></li>
+                <li><a href="#"><i class="fa-solid fa-cart-arrow-down"></i>Cart</a></li>
+                <li><a href="#"><i class="fa-solid fa-gift"></i>Coupons</a></li>
+                <li><a href="#"><i class="fa-solid fa-star"></i>Favorite items</a></li>
+                <li><a href="#"><i class="fa-solid fa-gear"></i>Settings</a></li>
             </ul>
-        </div>
-        <div class="products">
-            <div class="card-item">
-                <span class="new-badge">New</span>
-                <div class="card-image">
-                    <img src="../images/home_page.png" alt="">
-                </div>
-                <div class="card-body">
-                    <p class="category">JACKETS</p>
-                    <h4>Winter Jacket</h4>
-                    <div class="price">
-                        <span class="price-new">$89.00</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card-item">
-                <div class="card-image">
-                    <img src="../images/home_page.png" alt="">
-                </div>
-                <div class="card-body">
-                    <p class="category">COATS</p>
-                    <h4>Classic Coat</h4>
-                    <div class="price">
-                        <span class="price-new">$129.00</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card-item">
-                <span class="discount-badge">-20%</span>
-                <div class="card-image">
-                    <img src="../images/home_page.png" alt="">
-                </div>
-                <div class="card-body">
-                    <p class="category">JACKETS</p>
-                    <h4>Denim Jacket</h4>
-                    <div class="price">
-                        <span class="price-old">$79.00</span>
-                        <span class="price-new">$63.00</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card-item">
-                <div class="card-image">
-                    <img src="../images/home_page.png" alt="">
-                </div>
-                <div class="card-body">
-                    <p class="category">HOODIES</p>
-                    <h4>Pullover Hoodie</h4>
-                    <div class="price">
-                        <span class="price-new">$59.00</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card-item">
-                <div class="card-image">
-                    <img src="../images/home_page.png" alt="">
-                </div>
-                <div class="card-body">
-                    <p class="category">COATS</p>
-                    <h4>Wool Coat</h4>
-                    <div class="price">
-                        <span class="price-new">$149.00</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card-item">
-                <div class="card-image">
-                    <img src="../images/home_page.png" alt="">
-                </div>
-                <div class="card-body">
-                    <p class="category">JACKETS</p>
-                    <h4>Leather Jacket</h4>
-                    <div class="price">
-                        <span class="price-new">$199.00</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card-item">
-                <span class="new-badge">New</span>
-                <div class="card-image">
-                    <img src="../images/home_page.png" alt="">
-                </div>
-                <div class="card-body">
-                    <p class="category">SWEATERS</p>
-                    <h4>Knit Sweater</h4>
-                    <div class="price">
-                        <span class="price-new">$69.00</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card-item">
-                <div class="card-image">
-                    <img src="../images/home_page.png" alt="">
-                </div>
-                <div class="card-body">
-                    <p class="category">JACKETS</p>
-                    <h4>Bomber Jacket</h4>
-                    <div class="price">
-                        <span class="price-new">$99.00</span>
-                    </div>
-                </div>
+            <div class="text-end">
+                <p>Published @ 2019</p>
+                <p>Privacy Policy • Terms and conditions</p>
             </div>
         </div>
-        <div class="right-filter">
+
+        <!-- Main -->
+        <div class="main">
             <div class="filter-header">
-                <h3>Filter</h3>
-                <button class="btn" type="reset">Clear All</button>
+                <button class="btn" type="submit"><i class="fa-solid fa-filter"></i>Filter by</button>
             </div>
-            <div class="filter-group">
-                <h4>Color</h4>
-                <ul>
-                    <li><a href="#"><span class="dot black"></span>Black</a><span>12</span></li>
-                    <li><a href="#"><span class="dot gray"></span>Gray</a><span>8</span></li>
-                    <li><a href="#"><span class="dot white"></span>White</a><span>15</span></li>
-                    <li><a href="#"><span class="dot red"></span>Red</a><span>6</span></li>
-                    <li><a href="#"><span class="dot blue"></span>Blue</a><span>9</span></li>
-                    <li><a href="#"><span class="dot green"></span>Green</a><span>5</span></li>
-                </ul>
-            </div>
-            <div class="filter-group">
-                <h4>Size</h4>
-                <ul class="size">
-                    <li><a href="#">XS</a></li>
-                    <li><a href="#">S</a></li>
-                    <li><a href="#">M</a></li>
-                    <li><a href="#">L</a></li>
-                    <li><a href="#">XL</a></li>
-                    <li><a href="#">XXL</a></li>
-                </ul>
-            </div>
-            <div class="filter-group">
-                <h4>Price Range</h4>
-                <div class="price-range">
-                    <input type="text" placeholder="Min">
-                    <span>-</span>
-                    <input type="text" placeholder="Max">
+
+            <!-- Top Sellers -->
+            <div class="top-sellers">
+                <h4>🔥 Top Sellers</h4>
+                <div class="seller-card">
+                    <div class="avatar-circle"></div>
+                    <p class="text">John Smith</p>
+                    <span>145 orders</span>
                 </div>
-                <button class="btn" type="submit">Apply</button>
+                <div class="seller-card">
+                    <div class="avatar-circle"></div>
+                    <p class="text">John Smith</p>
+                    <span>145 orders</span>
+                </div>
+                <div class="seller-card">
+                    <div class="avatar-circle"></div>
+                    <p class="text">John Smith</p>
+                    <span>145 orders</span>
+                </div>
+                <div class="seller-card">
+                    <div class="avatar-circle"></div>
+                    <p class="text">John Smith</p>
+                    <span>145 orders</span>
+                </div>
+                <div class="seller-card">
+                    <div class="avatar-circle"></div>
+                    <p class="text">John Smith</p>
+                    <span>145 orders</span>
+                </div>
+                <div class="seller-card">
+                    <div class="avatar-circle"></div>
+                    <p class="text">John Smith</p>
+                    <span>145 orders</span>
+                </div>
+                <div class="seller-card">
+                    <div class="avatar-circle"></div>
+                    <p class="text">John Smith</p>
+                    <span>145 orders</span>
+                </div>
+                <div class="seller-card">
+                    <div class="avatar-circle"></div>
+                    <p class="text">John Smith</p>
+                    <span>145 orders</span>
+                </div>
             </div>
-            <div class="filter-group">
-                <h4>Brand</h4>
-                <div class="brand">
-                    <p>
-                    <label for="brand-1">
-                        <input type="checkbox" id="brand-1">Nike
-                        <span>15</span> 
-                    </label>
-                    </p>
-                    <p>
-                    <label for="brand-2">
-                        <input type="checkbox" id="brand-2">Adidas
-                        <span>12</span> 
-                    </label>
-                    </p>
-                    <p>
-                    <label for="brand-3">
-                        <input type="checkbox" id="brand-3">Zara
-                        <span>8</span>
-                    </label>
-                    </p>
-                    <p>
-                    <label for="brand-4">
-                        <input type="checkbox" id="brand-4">H&M
-                        <span>10</span> 
-                    </label>
-                    </p>
+
+            <!-- Top Articles -->
+            <div class="top-articles">
+                <h4>🔥 Top Articles</h4>
+                    <div class="article-card">
+                        <p class="article-icon"><i class="fa-solid fa-pen-nib"></i></p>
+                        <p class="text">How to design a logo in 5 steps</p>
+                        <p>by Ahmed Shadeed</p>
+                    </div>
+                    <div class="article-card">
+                        <p class="article-icon"><i class="fa-solid fa-pen-nib"></i></p>
+                        <p class="text">How to design a logo in 5 steps</p>
+                        <p>by Ahmed Shadeed</p>
+                    </div>
+                    <div class="article-card">
+                        <p class="article-icon"><i class="fa-solid fa-arrow-pointer"></i></p>
+                        <p class="text">The Im portance of UX Design in Business</p>
+                        <p>by John Smith</p>
+                    </div>
+                    <div class="article-card">
+                        <p class="article-icon"><i class="fa-solid fa-arrow-pointer"></i></p>
+                        <p class="text">The Im portance of UX Design in Business</p>
+                        <p>by John Smith</p>
+                    </div>
+                
+            </div>
+
+            <!-- Latest Bla Bla -->
+            <div class="latest">
+                <h4>🔥 Latest Bla Bla</h4>
+                <div class="search-box">
+                    <input type="text" placeholder="What are you looking for?">
+                    <button class="btn" type="submit">Search</button>
+                </div>
+                <div class="cards">
+                    <div class="card">
+                        <p class="article-icon"><i class="fa-solid fa-table-cells"></i></p>
+                        <p class="text">How to design a logo in 5 steps</p>
+                        <p>by Ahmed Shadeed</p>
+                    </div>
+                    <div class="card">
+                        <p class="article-icon"><i class="fa-solid fa-table-cells"></i></p>
+                        <p class="text">How to design a logo in 5 steps</p>
+                        <p>by Ahmed Shadeed</p>
+                    </div>
+                    <div class="card">
+                        <p class="article-icon"><i class="fa-solid fa-table-cells"></i></p>
+                        <p class="text">How to design a logo in 5 steps</p>
+                        <p>by Ahmed Shadeed</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    
 </body>
 </html>
