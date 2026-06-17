@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+h1{
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
